@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Colloquium</title>
+    
+    <style>
+        @font-face {
+            font-family: 'GowunDodum-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+            font-family: sans-serif;
+            background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4) ), url(./Omega\ Nebula.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .header {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            font-family: 'GowunDodum-Regular';
+            font-size: 4em;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+            z-index: 5;
+        }
+
+        .center-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .shape-link {
+            display: block;
+            margin: 10px 0;
+            width: 200px;
+            padding: 15px 30px;
+            border-radius: 20px;
+            background-color: #0000007f;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+            font-family: 'GowunDodum-Regular';
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .shape-link:hover {
+            background-color: #85848490;
+        }
+
+        .help-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            z-index: 10;
+        }
+
+        .help-circle {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            border-radius: 50%;
+            background-color: #000000;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center; /* 메인축 */
+            align-items: center; /* 메인축의 수직축 */
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+        }
+
+        .hover-text {
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            color: rgba(255, 255, 255, 0.841);
+            white-space: nowrap;
+        }
+
+        .help-container:hover .hover-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">Submission Forms</div>
+
+    <div class="center-container">
+        <a href="https://forms.gle/5VCxyvpUvrbneU9p7" class="shape-link">수요조사(F)</a>
+        <a href="https://forms.gle/L48fx6fm6oQjaBss5" class="shape-link">분야 편성(F)</a>
+        <a href="https://forms.gle/82BnpjrrHY14RsJm6" class="shape-link">조 편성</a>
+        <a href="https://forms.gle/hVWss6b7fjpzCutm8" class="shape-link">보고서 제출</a>
+        <a href="https://forms.gle/m6aACATT9UAZDcYS6" class="shape-link">포트폴리오 제출</a>
+        <a href="https://forms.gle/XXALxQSoqDc5wC5YA" class="shape-link">동료평가지</a>
+    </div>
+
+    <div class="help-container">
+        <div class="help-circle">?</div>
+        <div class="hover-text">M17(Omega Nebula)<br>image by NASA</div>
+    </div>
+</body>
+
+</html>
